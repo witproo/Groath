@@ -244,3 +244,24 @@ document.addEventListener('DOMContentLoaded', function(){
 
   startAuto();
 });
+
+
+// Contact form -> WhatsApp integration (added by assistant)
+(function(){
+  var form = document.getElementById("whatsappForm");
+  if(!form) return;
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = document.getElementById("name").value || "";
+    var email = document.getElementById("email").value || "";
+    var message = document.getElementById("message").value || "";
+    var text = "Hello Groअथ् Team, my name is " + name + ". My email is " + email + ". I'd like to connect regarding " + message + ".";
+    var wa = "https://wa.me/919711206218?text=" + encodeURIComponent(text);
+    var toast = document.getElementById("toast");
+    if(toast){
+      toast.classList.add("show");
+      setTimeout(function(){ toast.classList.remove("show"); }, 2200);
+    }
+    setTimeout(function(){ window.open(wa, "_blank"); }, 800);
+  });
+})();

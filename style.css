@@ -362,3 +362,154 @@ services__grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px
   .testimonial-btn.prev { left: 8px; }
   .testimonial-btn.next { right: 8px; }
 }
+
+
+/* === FINAL MASTER MERGE FIX === */
+
+/* Header - deep green with white text */
+.header {
+  background: #153b2e;
+  border-bottom: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav__link,
+.brand-name,
+.brand-tagline {
+  color: #ffffff !important;
+}
+
+.nav__actions .nav__cta {
+  background: #f1c04d;
+  color: #153b2e;
+}
+
+/* Logo styling */
+.brand-logo-img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+  background: none !important;
+  filter: none !important;
+  border: none !important;
+  border-radius: 0;
+}
+
+/* Hero section */
+.hero-name {
+  font-size: 22px;
+  font-weight: 800;
+  color: #153b2e;
+  margin-bottom: 4px;
+}
+
+/* Punchline highlight */
+.punchline {
+  background: linear-gradient(90deg, #f1c04d, #ffda73);
+  color: #153b2e;
+  font-weight: 800;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 17px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(241,192,77,0.25);
+  margin-top: 12px;
+}
+.punchline strong {
+  color: #0a331f;
+}
+
+
+/* === CONTACT SECTION RE-DESIGN === */
+.contact-section {
+  background: #153b2e;
+  color: #fff;
+  padding: 80px 20px;
+}
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+  align-items: center;
+}
+.contact-info h2 {
+  color: #f1c04d;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+.contact-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+.contact-item i { color: #f1c04d; font-size: 20px; }
+.contact-item:hover {
+  color: #f1c04d;
+  transform: translateX(5px);
+}
+.btn-gold {
+  background: #f1c04d;
+  color: #153b2e;
+  font-weight: 700;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-gold:hover {
+  background: #ffda73;
+  box-shadow: 0 0 12px #f1c04d;
+}
+#whatsappForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#whatsappForm input,
+#whatsappForm textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.toast {
+  position: fixed;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f1c04d;
+  color: #153b2e;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: bottom 0.6s ease;
+  z-index: 999;
+}
+.toast.show {
+  bottom: 30px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 20px;
+  }
+  .contact-item {
+    justify-content: center;
+  }
+}
