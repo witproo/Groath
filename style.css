@@ -273,3 +273,108 @@ services__grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px
 .btn-gold:hover {
   transform: translateY(-2px);
 }
+
+
+/* === Preloader (Rising Up Animation) === */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.preloader-logo {
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--deep-green-2);
+  animation: riseUp 1.4s cubic-bezier(.23,1,.32,1) infinite alternate;
+  text-shadow: 0 4px 10px rgba(15,59,46,0.15);
+  letter-spacing: 1px;
+}
+
+@keyframes riseUp {
+  0% { transform: translateY(0); opacity: 0.8; }
+  100% { transform: translateY(-20px); opacity: 1; }
+}
+
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* === Hero Rise-In Animation (after preloader) === */
+.hero__content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero__content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Testimonials Carousel === */
+.testimonial-carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+}
+
+.testimonial.card {
+  flex: 0 0 100%;
+  margin: 0;
+  text-align: center;
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 22px 18px;
+  box-shadow: 0 6px 18px rgba(15,59,46,0.05);
+}
+
+.testimonial footer {
+  margin-top: 12px;
+  font-weight: 700;
+  color: var(--metal-gold);
+}
+
+.testimonial-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--metal-gold);
+  border: none;
+  color: #07110b;
+  font-size: 24px;
+  font-weight: bold;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(183,134,47,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonial-btn:hover {
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 10px 22px rgba(183,134,47,0.25);
+}
+
+.testimonial-btn.prev { left: -60px; }
+.testimonial-btn.next { right: -60px; }
+
+@media (max-width: 900px) {
+  .testimonial-btn.prev { left: 8px; }
+  .testimonial-btn.next { right: 8px; }
+}

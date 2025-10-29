@@ -169,3 +169,78 @@ document.addEventListener('DOMContentLoaded', function (){
   showImage(index);
   startAuto();
 })();
+
+
+// === Preloader Control & Hero Rise-In ===
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  if(preloader){
+    preloader.classList.add('hidden');
+  }
+  const hero = document.querySelector('.hero__content');
+  setTimeout(() => {
+    if(hero) hero.classList.add('visible');
+  }, 800);
+});
+
+// === Infinite Testimonials Carousel (Seamless Loop) ===
+document.addEventListener('DOMContentLoaded', function(){
+  const track = document.querySelector('.testimonial-track');
+  const slides = document.querySelectorAll('.testimonial.card');
+  const nextBtn = document.querySelector('.testimonial-btn.next');
+  const prevBtn = document.querySelector('.testimonial-btn.prev');
+  if(!track || slides.length === 0) return;
+
+  let index = 1; // because of clones
+  const total = slides.length;
+
+  // Clone first and last slides for smooth infinite looping
+  const firstClone = slides[0].cloneNode(true);
+  const lastClone = slides[total - 1].cloneNode(true);
+  track.appendChild(firstClone);
+  track.insertBefore(lastClone, slides[0]);
+
+  const allSlides = track.querySelectorAll('.testimonial.card');
+  const size = 100;
+  track.style.transform = `translateX(-${index * size}%)`;
+
+  let autoSlide;
+  let isTransitioning = false;
+
+  function updateSlide(newIndex){
+    if (isTransitioning) return;
+    isTransitioning = true;
+    index = newIndex;
+    track.style.transition = 'transform 0.6s ease-in-out';
+    track.style.transform = `translateX(-${index * size}%)`;
+  }
+
+  track.addEventListener('transitionend', () => {
+    if (allSlides[index].isEqualNode(firstClone)) {
+      track.style.transition = 'none';
+      index = 1;
+      track.style.transform = `translateX(-${index * size}%)`;
+    }
+    if (allSlides[index].isEqualNode(lastClone)) {
+      track.style.transition = 'none';
+      index = total;
+      track.style.transform = `translateX(-${index * size}%)`;
+    }
+    isTransitioning = false;
+  });
+
+  function startAuto(){
+    stopAuto();
+    autoSlide = setInterval(() => updateSlide(index + 1), 5000);
+  }
+  function stopAuto(){
+    if(autoSlide) clearInterval(autoSlide);
+  }
+
+  nextBtn.addEventListener('click', ()=>{ updateSlide(index + 1); startAuto(); });
+  prevBtn.addEventListener('click', ()=>{ updateSlide(index - 1); startAuto(); });
+  track.addEventListener('mouseenter', stopAuto);
+  track.addEventListener('mouseleave', startAuto);
+
+  startAuto();
+});
