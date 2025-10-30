@@ -7,13 +7,13 @@
 <title>Groअथ् — Stock Trading Coach | Business Consultant | Financial Educator</title>
 <meta content="Groअथ् — Stock Market Trader, Educator, and TEDx Speaker. Mentorship, workshops, and market strategy." name="description"/>
 <link href="style.css" rel="stylesheet"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>\n  <!-- Preloader -->\n  <div id="preloader">\n    <div class="preloader-logo">Groअथ्</div>\n  </div>\n
   <header class="header" id="header" role="banner">
 <div class="container nav">
 <a aria-label="Homepage" class="brand-link" href="#home">
-<img src="assets/logo.jpg" alt="Groअथ™ Logo" class="brand-logo-img"/>
+<img alt="Groअथ™ Logo" class="brand-logo-img" src="assets/logo.jpg"/>
 <div class="brand-meta">
 <div class="brand-name">Groअथ्</div>
 <div class="brand-tagline">Stock Trading Coach | Business Consultant | Financial Educator</div>
@@ -33,7 +33,6 @@
 <li><a class="nav__link" href="#contact">Contact</a></li>
 </ul>
 </nav>
-
 </div>
 </header>
 <main id="main">
@@ -88,16 +87,16 @@
 </section>
 <!-- About -->
 <section class="about" id="about">
-<div class="container about__wrap">
-<div class="about__media card">
-<img alt="Harvinder on stage" class="media-img" src="gallery/gallery1.jpg"/>
+<div class="about-container" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; margin-top: 50px;">
+<div class="about-image" style="flex: 1; min-width: 280px;">
+<img alt="About Groath" src="assets/logo.jpg" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"/>
 </div>
-<div class="about__content">
-<h2>About Us</h2>
-<p>I am Harvinder Mathur, a Stock Trading Coach, Business Consultant, and Financial Educator dedicated to simplifying wealth creation for learners of all ages. A graduate of Delhi University, I have a diverse professional background spanning hospitality, entrepreneurship, and financial markets, which allows me to combine practical business insight with real-world experience in every session I conduct.</p>
-<p>Over the years, I have worked with renowned hospitality brands, built extensive distribution networks, and now guide individuals and organizations in mastering the art of intelligent investing. Each step of this journey has strengthened my belief that true financial empowerment comes from knowledge, clarity, and disciplined action.</p>
-<p>As we often say in our sessions — our teaching philosophy is simple yet effective:</p>
-<blockquote class="punchline">Making money in the stock market is as easy as making chapati in the kitchen – <strong>But one should know the PROCESS</strong></blockquote>
+<div class="about-text" style="flex: 2; min-width: 300px;">
+<p>At Groअथ् – Stock Trading Academy, we believe that — 'Making money in the stock market is as easy as making चपाती in the kitchen'... but only if you know the process.</p>
+<p>We are a passionate team of six professional traders — each trained by some of the world’s best trading academies and equipped with real, hands-on market experience. We’ve seen every phase of the trading world — from booms to bear runs — and bring that wisdom straight into our classrooms.</p>
+<p>At Groअथ्, our mission is to educate, empower, and elevate the new generation by helping them understand the science and logic of stock trading — so they can build wealth ethically and make our country proud.</p>
+<p>Our Foundation Course is designed to help learners discover their true potential, understand how markets really work, and develop the mindset and discipline of a professional trader.</p>
+<p>We don’t just teach our students — we mentor them to become mentors, nurturing a community of skilled, confident, and responsible traders who contribute to a stronger and growing भारत🇮🇳.</p>
 </div>
 </div>
 </section>
@@ -200,39 +199,35 @@
 </div>
 </section>
 <!-- Contact -->
-
-<section id="contact" class="contact-section">
-  <div class="container contact-container">
-    <div class="contact-info">
-      <h2>Get in Touch with Groअथ्</h2>
-      <p>We’d love to hear from you. Reach out via WhatsApp or the form below.</p>
-      <div class="contact-details">
-        <a href="https://wa.me/919711206218" target="_blank" class="contact-item">
-          <i class="fa-brands fa-whatsapp"></i> +91 97112 06218
+<section class="contact-section" id="contact">
+<div class="container contact-container">
+<div class="contact-info">
+<h2>Get in Touch with Groअथ्</h2>
+<p>We’d love to hear from you. Reach out via WhatsApp or the form below.</p>
+<div class="contact-details">
+<a class="contact-item" href="https://wa.me/919711206218" target="_blank">
+<i class="fa-brands fa-whatsapp"></i> +91 97112 06218
         </a>
-        <a href="tel:+919211230750" class="contact-item">
-          <i class="fa-solid fa-phone"></i> +91 92112 30750
+<a class="contact-item" href="tel:+919211230750">
+<i class="fa-solid fa-phone"></i> +91 92112 30750
         </a>
-        <a href="mailto:witpro369@gmail.com" class="contact-item">
-          <i class="fa-solid fa-envelope"></i> witpro369@gmail.com
+<a class="contact-item" href="mailto:witpro369@gmail.com">
+<i class="fa-solid fa-envelope"></i> witpro369@gmail.com
         </a>
-      </div>
-    </div>
-
-    <div class="contact-form">
-      <form id="whatsappForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn btn-gold">Send Message</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Toast -->
-  <div id="toast" class="toast">Opening WhatsApp…</div>
+</div>
+</div>
+<div class="contact-form">
+<form id="whatsappForm">
+<input id="name" placeholder="Your Name" required="" type="text"/>
+<input id="email" placeholder="Your Email" required="" type="email"/>
+<textarea id="message" placeholder="Your Message" required="" rows="4"></textarea>
+<button class="btn btn-gold" type="submit">Send Message</button>
+</form>
+</div>
+</div>
+<!-- Toast -->
+<div class="toast" id="toast">Opening WhatsApp…</div>
 </section>
-
 </main>
 <!-- Back to Top button (premium bright gold with bounce) -->
 <button aria-label="Back to top" class="back-to-top" id="back-to-top" style="position:fixed;right:30px;left:auto;bottom:24px;z-index:2200;" title="Back to top">
