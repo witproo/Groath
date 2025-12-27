@@ -158,140 +158,17 @@ let scrollTopBtn;
         ];
 
         const galleryData = [
-  {
-    "id": 1,
-    "title": "Event Photo 1",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-01.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Event Photo 2",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-02.jpg"
-  },
-  {
-    "id": 3,
-    "title": "Event Photo 3",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-03.jpg"
-  },
-  {
-    "id": 4,
-    "title": "Event Photo 4",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-04.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Event Photo 5",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-05.jpg"
-  },
-  {
-    "id": 6,
-    "title": "Event Photo 6",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-06.jpg"
-  },
-  {
-    "id": 7,
-    "title": "Event Photo 7",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-07.jpg"
-  },
-  {
-    "id": 8,
-    "title": "Event Photo 8",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-08.jpg"
-  },
-  {
-    "id": 9,
-    "title": "Event Photo 9",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-09.jpg"
-  },
-  {
-    "id": 10,
-    "title": "Event Photo 10",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-10.jpg"
-  },
-  {
-    "id": 11,
-    "title": "Event Photo 11",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-11.jpg"
-  },
-  {
-    "id": 12,
-    "title": "Event Photo 12",
-    "description": "Academy event highlight",
-    "type": "photo",
-    "thumbnail": "assets/gallery/photos/event-photo-12.jpg"
-  },
-  {
-    "id": 13,
-    "title": "Event Video 1",
-    "description": "Academy event video",
-    "type": "video",
-    "thumbnail": "assets/gallery/videos/event-video-01.mp4"
-  },
-  {
-    "id": 14,
-    "title": "Event Video 2",
-    "description": "Academy event video",
-    "type": "video",
-    "thumbnail": "assets/gallery/videos/event-video-02.mp4"
-  },
-  {
-    "id": 15,
-    "title": "Event Video 3",
-    "description": "Academy event video",
-    "type": "video",
-    "thumbnail": "assets/gallery/videos/event-video-03.mp4"
-  },
-  {
-    "id": 16,
-    "title": "Event Video 4",
-    "description": "Academy event video",
-    "type": "video",
-    "thumbnail": "assets/gallery/videos/event-video-04.mp4"
-  },
-  {
-    "id": 17,
-    "title": "Event Video 5",
-    "description": "Academy event video",
-    "type": "video",
-    "thumbnail": "assets/gallery/videos/event-video-05.mp4"
-  },
-  {
-    "id": 18,
-    "title": "Event Video 6",
-    "description": "Academy event video",
-    "type": "video",
-    "thumbnail": "assets/gallery/videos/event-video-06.mp4"
-  },
-  {
-    "id": 19,
-    "title": "Event Video 7",
-    "description": "Academy event video",
-    "type": "video",
-    "thumbnail": "assets/gallery/videos/event-video-07.mp4"
-  }
-];
+            { id: 1, title: "Groath Training Session", description: "Live training, seminars and events by Groath", thumbnail: "gallery/groath-training-session-event-1.jpg", type: "image" },
+            { id: 2, title: "Groath Training Session", description: "Live training, seminars and events by Groath", thumbnail: "gallery/groath-training-session-event-10.jpg", type: "image" },
+            { id: 3, title: "Groath Training Session", description: "Live training, seminars and events by Groath", thumbnail: "gallery/groath-training-session-event-2.jpg", type: "image" },
+            { id: 4, title: "Groath Training Session", description: "Live training, seminars and events by Groath", thumbnail: "gallery/groath-training-session-event-3.jpg", type: "image" },
+            { id: 5, title: "Groath Training Session", description: "Live training, seminars and events by Groath", thumbnail: "gallery/groath-training-session-event-4.jpg", type: "image" },
+            { id: 6, title: "Groath Training Session", description: "Live training, seminars and events by Groath", thumbnail: "gallery/groath-training-session-event-5.jpg", type: "image" },
+            { id: 7, title: "Groath Training Session", description: "Live training, seminars and events by Groath", thumbnail: "gallery/groath-training-session-event-6.jpg", type: "image" },
+            { id: 8, title: "Groath Training Session", description: "Live training, seminars and events by Groath", thumbnail: "gallery/groath-training-session-event-7.jpg", type: "image" },
+            { id: 9, title: "Groath Training Session", description: "Live training, seminars and events by Groath", thumbnail: "gallery/groath-training-session-event-8.jpg", type: "image" },
+            { id: 10, title: "Groath Training Session", description: "Live training, seminars and events by Groath", thumbnail: "gallery/groath-training-session-event-9.jpg", type: "image" }
+        ];
 
         const achievementsData = [
             { id: 1, title: "Best Stock Trading Educator 2024", year: "2024", issuer: "Financial Excellence Awards India", description: "Recognized for outstanding financial education and training programs", icon: "🏆" },
@@ -476,22 +353,13 @@ let scrollTopBtn;
 
         let currentFilter = 'all';
 
-        function filterGallery(filter) {
-            currentFilter = filter;
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            renderGallery(filter);
-        }
-
-        function renderGallery(filter = 'all') {
+        
+        function renderGallery() {
             const galleryGrid = document.getElementById('galleryGrid');
-            const filteredData = filter === 'all' ? galleryData : galleryData.filter(item => item.type === filter);
-            
+            const filteredData = galleryData.filter(item => item.type !== 'video');
             galleryGrid.innerHTML = filteredData.map(item => `
                 <div class="gallery-item" onclick="openGalleryModal(${item.id})">
-                    <div class="gallery-thumbnail" style="background: url('${item.thumbnail}') center/cover; font-size: 0;">
-                        <span class="media-type-badge">${item.type === 'video' ? '🎥 Video' : '📸 Photo'}</span>
-                    </div>
+                    <div class="gallery-thumbnail" style="background-image: url('${item.thumbnail}'); background-size: contain; background-position: center; background-repeat: no-repeat; font-size: 0;"></div>
                     <div class="gallery-info">
                         <h3>${item.title}</h3>
                         <p class="gallery-description">${item.description}</p>
@@ -523,6 +391,7 @@ let scrollTopBtn;
                 <div class="testimonial-slide ${index === 0 ? 'active' : ''}" data-index="${index}">
                     <div class="testimonial-card">
                         <div class="testimonial-header">
+                            <div class="testimonial-photo">${testimonial.photo}</div>
                             <div class="testimonial-info">
                                 <p class="testimonial-author">${testimonial.name}</p>
                                 <p class="testimonial-level">${testimonial.title}</p>
@@ -641,11 +510,11 @@ let scrollTopBtn;
 
             modalHeader.innerHTML = `
                 <h2>${item.title}</h2>
-                <span class="media-type-badge">${item.type === 'video' ? '🎥 Video' : '📸 Photo'}</span>
+                
             `;
 
             modalBody.innerHTML = `
-                <div class="gallery-thumbnail" style="margin-bottom: 1.5rem; background: url('${item.thumbnail}') center/cover; height: 300px; border-radius: 8px;"></div>
+                <div class="gallery-thumbnail" style="margin-bottom: 1.5rem; background: url('${item.thumbnail}') center/contain no-repeat; height: 300px; border-radius: 8px;"></div>
                 <p class="gallery-description" style="font-size: 1rem; line-height: 1.8;">${item.description}</p>
                 ${item.type === 'video' ? '<p style="margin-top: 1rem; color: var(--color-text-secondary); font-style: italic;">🎥 Video content would play here</p>' : ''}
             `;
@@ -840,10 +709,3 @@ We will get back to you shortly.`;
         renderGallery();
         renderAchievements();
         renderTestimonials();
-document.addEventListener('click',function(e){
- if(e.target.id==='muteBtn'){
-  const v=document.querySelector('video');
-  v.muted=!v.muted;
-  e.target.innerText=v.muted?'Unmute':'Mute';
- }
-});
