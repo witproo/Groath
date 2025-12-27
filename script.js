@@ -1,37 +1,17 @@
 let scrollTopBtn;
 
         const facultyData = [
-            {
+{
                 id: 1,
                 name: "Harvinder Mathur",
                 qualification: "Foundation & Technical Analysis Expert",
-                experience: "10+ Years",
+                experience: "12+ Years",
                 specialization: "Technical Analysis & Swing Trading",
                 bio: "Seasoned expert known for simplifying complex stock market concepts into clear, result-oriented strategies. Emphasizes clarity, independent analysis, and emotion-free trading.",
                 photo: "harvinder_v2.jpg",
                 detailed_bio: "Harvinder Mathur is a seasoned Foundation and Technical Analysis Expert, known for simplifying complex stock market concepts into clear, result-oriented strategies. His structured approach blends disciplined market study with practical, data-backed techniques that help both beginners and experienced traders build a strong trading foundation.\n\nHe emphasizes clarity, independent analysis, and emotion-free trading, guiding learners to understand not just how the market moves, but why it moves. Through real-life examples and a highly practical teaching style, Harvinder empowers students to trade with purpose, confidence, and consistent logic.\n\nHis mission is to transform beginners into informed, confident, and self-reliant market participants."
             },
-            {
-                id: 2,
-                name: "Saurabh Limey",
-                qualification: "Full-Time Trader & Time Cycle Mentor",
-                experience: "12+ Years",
-                specialization: "Time Cycle Trading & Swing Strategies",
-                bio: "Disciplined full-time trader expert in Time Cycle Trading and low-risk swing strategies. Known for calm mindset and practical guidance.",
-                photo: "saurabh_v2.jpg",
-                detailed_bio: "Saurabh Limey is a disciplined full-time trader known for his expertise in Time Cycle Trading and low-risk swing strategies. Blending technical analysis with cyclical and planetary insights, he helps traders understand market timing with greater clarity.\n\nRespected across the trading community, Saurabh is admired for his calm mindset, practical guidance, and ability to keep traders emotionally balanced—whether markets move in their favor or against them. He has mentored learners from diverse backgrounds and continues to inspire them with his sharp insights and grounded approach."
-            },
-            {
-                id: 3,
-                name: "Puneet Gupta",
-                qualification: "NIFM & NSE Postgraduate, EPAT Certified",
-                experience: "14+ Years",
-                specialization: "F&O, Quant Trading & Capital Markets",
-                bio: "Seasoned financial-markets professional with expertise in F&O trading, quantitative analysis, and advanced trading technologies.",
-                photo: "puneet_v2.jpg",
-                detailed_bio: "Puneet Gupta is a seasoned financial-markets professional with 14+ years of corporate experience across capital markets, F&O, and quantitative trading. A postgraduate in Financial Markets from NIFM (Ministry of Finance) & NSE, he also holds multiple NCFM certifications and the prestigious EPAT certification from QuantInsti.\n\nAn expert in F&O trading, Puneet is skilled in advanced Excel, VBA, Bloomberg, and BlackRock Aladdin. He blends technical knowledge with real-market experience, delivering logical, structured, and highly practical training that helps learners build strong quantitative skills and a disciplined trading mindset."
-            },
-            {
+{
                 id: 4,
                 name: "Suresh Shah",
                 qualification: "Six Sigma Green Belt, ICMAI Certified",
@@ -40,8 +20,28 @@ let scrollTopBtn;
                 bio: "Senior financial-markets professional with deep expertise in derivatives, risk management, and advanced technical analysis of market trends.",
                 photo: "suresh_v2.jpg",
                 detailed_bio: "Suresh Shah is a senior financial-markets professional with 28+ years of experience across derivatives, risk management, fund operations, investment advisory, and financial consultancy. A highly skilled technical analyst, he excels at interpreting market trends, price action, and chart patterns.\n\nHe is Six Sigma Green Belt Certified and has deep expertise in securities operations, hedge fund accounting, custody & settlements, and process automation. Suresh holds professional qualifications from ICMAI and postgraduate degrees from the University of Mumbai, bringing strong academic and industry depth to his teaching.\n\nHis structured, practical approach makes complex financial concepts easy to understand for learners at all levels."
+            },
+{
+                id: 2,
+                name: "Saurabh Limey",
+                qualification: "Full-Time Trader & Time Cycle Mentor",
+                experience: "15+ Years",
+                specialization: "Time Cycle Trading & Astro-based Trading",
+                bio: "Disciplined full-time trader expert in Time Cycle Trading and low-risk swing strategies. Known for calm mindset and practical guidance. | Astro-based Trading Expert",
+                photo: "saurabh_v2.jpg",
+                detailed_bio: "Saurabh Limey is a disciplined full-time trader known for his expertise in Time Cycle Trading and low-risk swing strategies. Blending technical analysis with cyclical and planetary insights, he helps traders understand market timing with greater clarity.\n\nRespected across the trading community, Saurabh is admired for his calm mindset, practical guidance, and ability to keep traders emotionally balanced—whether markets move in their favor or against them. He has mentored learners from diverse backgrounds and continues to inspire them with his sharp insights and grounded approach."
+            },
+{
+                id: 3,
+                name: "Puneet Gupta",
+                qualification: "NIFM & NSE Postgraduate, EPAT Certified",
+                experience: "14+ Years",
+                specialization: "F&O, Quant Trading & Capital Markets",
+                bio: "Seasoned financial-markets professional with expertise in F&O trading, quantitative analysis, and advanced trading technologies.",
+                photo: "puneet_v2.jpg",
+                detailed_bio: "Puneet Gupta is a seasoned financial-markets professional with 14+ years of corporate experience across capital markets, F&O, and quantitative trading. A postgraduate in Financial Markets from NIFM (Ministry of Finance) & NSE, he also holds multiple NCFM certifications and the prestigious EPAT certification from QuantInsti.\n\nAn expert in F&O trading, Puneet is skilled in advanced Excel, VBA, Bloomberg, and BlackRock Aladdin. He blends technical knowledge with real-market experience, delivering logical, structured, and highly practical training that helps learners build strong quantitative skills and a disciplined trading mindset."
             }
-        ];
+];
 
         const coursesData = [
             {

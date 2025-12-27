@@ -2059,7 +2059,7 @@ body {
 /* FINAL FIX: remove background image repetition in modal */
 .modal-body {
     background-image: none !important;
-    background: #000 !important;
+    background: transparent !important;
 }
 
 .modal-content {
