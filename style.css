@@ -2070,3 +2070,26 @@ body {
 }
 
 video{object-fit:contain;}
+
+
+/* Hide testimonial photos */
+
+
+/* Hide only testimonial photos, not faculty photos */
+.testimonial-card .testimonial-photo {
+  display: none;
+}
+
+/* Ensure faculty images are visible */
+.faculty img,
+.faculty-photo,
+.faculty-card img {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Hide only testimonial photos */
+.testimonial-card .testimonial-photo {
+  display: none;
+}

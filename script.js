@@ -523,7 +523,6 @@ let scrollTopBtn;
                 <div class="testimonial-slide ${index === 0 ? 'active' : ''}" data-index="${index}">
                     <div class="testimonial-card">
                         <div class="testimonial-header">
-                            <div class="testimonial-photo">${testimonial.photo}</div>
                             <div class="testimonial-info">
                                 <p class="testimonial-author">${testimonial.name}</p>
                                 <p class="testimonial-level">${testimonial.title}</p>
