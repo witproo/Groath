@@ -47,7 +47,7 @@ let scrollTopBtn;
             {
                 id: 1,
                 title: "Stock Trading Foundation Course",
-                price: "₹12,000",
+                price: "₹12,000 + GST ",
                 duration: "12 Weeks",
                 hours: "60+ Hours",
                 level_name: "Beginner",
@@ -130,7 +130,7 @@ let scrollTopBtn;
             {
                 id: 4,
                 title: "Astrobase Trading",
-                price: "₹10,000",
+                price: "₹90,000 + GST ",
                 duration: "8 Weeks",
                 hours: "40+ Hours",
                 level_name: "Beginner",
